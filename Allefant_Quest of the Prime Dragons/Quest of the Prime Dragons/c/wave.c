@@ -35,16 +35,13 @@ void wave_tick(void) {
             }
         }
         if (wave >= 5 && wave < 9) {
-            if (s % 20 == 0) {
+            if (s == 0) {
                 actor_new(app->actors, x, y, AT_WOLF);
             }
-            if (s % 20 == 1) {
-                actor_new(app->actors, x, y, AT_WOLF);
-            }
-            if (s % 20 == 10) {
+            if (s == 20) {
                 actor_new(app->actors, x, y, AT_BAT);
             }
-            if (s % 20 == 11) {
+            if (s == 40) {
                 actor_new(app->actors, x, y, AT_GROLL);
             }
         }
@@ -79,23 +76,23 @@ void wave_tick(void) {
         }
         if (wave == 5) {
             if (s == 0) {
-                actor_new(app->actors, x, y, AT_DRAKE);
+                actor_new(app->actors, x, y, AT_PAPAGROLL);
             }
         }
         if (wave == 6) {
             if (s == 0) {
                 actor_new(app->actors, x, y, AT_DRAKE);
             }
+        }
+        if (wave == 7) {
             if (s == 1) {
                 actor_new(app->actors, x, y, AT_BAT);
             }
             if (s == 2) {
                 actor_new(app->actors, x, y, AT_BAT);
             }
-        }
-        if (wave == 7) {
-            if (s == 0) {
-                actor_new(app->actors, x, y, AT_PAPAGROLL);
+            if (s == 3) {
+                actor_new(app->actors, x, y, AT_BAT);
             }
             if (s == 20 || s == 40) {
                 actor_new(app->actors, x, y, AT_GROLL);
@@ -105,27 +102,23 @@ void wave_tick(void) {
             if (s == 0) {
                 actor_new(app->actors, x, y, AT_DRAKE);
             }
-            if (s == 1) {
+            if (s == 30) {
                 actor_new(app->actors, x, y, AT_DRAKE);
             }
         }
         if (wave == 9) {
-            if (s == 0) {
+            if (s == 50) {
                 actor_new(app->actors, 940, 60, AT_DRAGON);
             }
-            if (s % 10 == 0) {
-                actor_new(app->actors, x, y, AT_WOLF);
-            }
-            if (s % 10 == 1) {
-                actor_new(app->actors, x, y, AT_BAT);
-            }
             if (s == 5) {
-                actor_new(app->actors, x, y, AT_DRAKE);
+                actor_new(app->actors, x, y, AT_PAPAGROLL);
             }
             if (s % 10 == 2) {
                 actor_new(app->actors, x, y, AT_GROLL);
             }
         }
     }
-    wave_ticks++;
+    if (wave_ticks < 3600 * 10 - 1) {
+        wave_ticks++;
+    }
 }

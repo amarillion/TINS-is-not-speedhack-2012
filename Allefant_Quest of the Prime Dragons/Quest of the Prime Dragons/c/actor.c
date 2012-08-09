@@ -131,6 +131,11 @@ void actor_hp(Actor * self, Actor * bywho, float amount) {
             self->target = bywho;
         }
     }
+    if (! self->kind->enemy && bywho && amount < 0) {
+        if (! self->target && ! self->walking) {
+            self->target = bywho;
+        }
+    }
     if (bywho && bywho->kind->id == AT_BAT && amount < 0) {
         bywho->hp -= amount / 2;
         if (bywho->hp > bywho->max_hp) {
@@ -211,7 +216,7 @@ void actor_tick(Actor * self) {
                 actor_hp(self->target, self, - 6);
             }
             if (self->kind->projectile == IT_FIREBALL) {
-                actor_hp(self->target, self, - 10);
+                actor_hp(self->target, self, - 5);
             }
             self->projectile = 0;
         }

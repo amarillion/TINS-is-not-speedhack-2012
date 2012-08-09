@@ -3,7 +3,7 @@
 char * main_data_path;
 LandFont * font;
 static char * save_path;
-double scale = 1;
+double scale = 2;
 Application * app;
 void restart(void) {
     actors_reset(app->actors);
