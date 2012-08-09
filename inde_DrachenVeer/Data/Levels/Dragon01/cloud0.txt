@@ -1,0 +1,4 @@
+3
+OBT Cloud0_0 40 20 0 Cloud0.obt
+OBT Cloud0_1 440 20 0 Cloud1.obt
+OBT Cloud0_2 840 20 0 Cloud0.obt

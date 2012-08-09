@@ -1,0 +1,1 @@
+A+D to move, J to jump and K to shoot.

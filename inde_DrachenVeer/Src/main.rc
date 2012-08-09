@@ -1,0 +1,31 @@
+//Resource file which has Application Information.
+#include <windows.h>
+#include "..\Include\appinfo.h"
+
+1 VERSIONINFO
+FILEOS VOS__WINDOWS32
+FILETYPE VFT_APP
+{
+   BLOCK "StringFileInfo"
+   {
+      BLOCK "040904E4"
+      {
+         VALUE "CompanyName", COMPANYNAME
+         VALUE "FileVersion", FILEVER
+         VALUE "FileDescription", FILEDESC
+         VALUE "LegalCopyright", COPYRIGHT
+         VALUE "LegalTrademarks", TRADEMARKS
+         VALUE "Comments", COMMENTS
+         VALUE "InternalName", INTERNALNAME
+         VALUE "Original Filename", ORIGINALNAME
+         VALUE "ProductName", PRODNAME
+         VALUE "ProductVersion", PRODVER
+      }
+   }
+   BLOCK "VarFileInfo" 
+   {
+      VALUE "Translation", 0x409, 1200
+   }
+}
+
+allegro_icon ICON DISCARDABLE "..\Data\ICON.ICO"

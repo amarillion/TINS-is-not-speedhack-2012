@@ -1,0 +1,110 @@
+Data
+
+	Dragon class
+		Health
+		pos
+		state -- 0 flying on/off screen (depends on level state), 1 alive, 2 dying, 3 dead
+		aniCount -- For fading to death / time immune to damage from hit
+	Knight class
+		pos (x/y) -- Where it's at
+		target (x/y) -- Where it wants to fly to
+		speed (x/y) -- Current speed
+		state -- 0 for waiting to spawn, 1 for alive and 'on-screen', 2 for dying, 3 for dead (and not removed from list)
+		aniCount -- for fading to death, or time to wait until next shot
+	Projectile class
+		pos (x/y)
+		speed (x/y)
+		type
+		aniCount
+	Particle class
+		pos (x/y)
+		speed (x/y)
+		life
+		color
+		type -- might not be used
+		aniCount
+	Star/Planet class
+		pos (x/y)
+		type -- only a byte needed, bit that happens to control even odd controls if it's a star or planet, other 7 bits control the look
+		aniCount -- only used for stars
+	Level Data
+		Current level -- selectedLevel var that title can play with actually
+		state
+			-1 for loading the level
+			0 for starting (Dragon flies in, stars/planets zoom in)
+			1 for playing
+			2 for ending
+				Hud is part of play field, fade out the play field (most likely by drawing a fullscreen rectangle that fades in)
+				If Dragon is alive, dragon is flying out, stars/planet zooming fast with a trail, Winner is display over fade
+				If Dragon is dead, Game Over is displayed over the fade
+			3 for player choice
+				Continue or Try Again (will set state to -1, and continue will add one to selectedLeve)
+				Quit (sets running to false)
+		Dragon Max health (for the bar at the top)
+		Knights on screen -- Just a counter of knights in alive/dying state
+		alive knights
+			When level is 'loaded', its a copy of the total knights from meta, used to set the size of the array
+			After it wll be a count of all non dead knights
+		aniCount -- For transition stuff like star/planet trail for zoom effect and play field fading
+
+Code
+
+	Init Code
+		Load the files, like bitmaps and sounds and whatever just needs to loaded once per game
+		Set state to -1
+		create massive arrays for projectiles and partiticles
+	Game loop
+		wait for event
+		while event loop no empty
+			if state == -1
+				Get data for selected level
+				create arrays for stars, planet, and knights.
+				init Dragon object
+				set state to 0
+			if state == 3
+				process menu controls
+					if first item selected
+						set state to -1
+			if state == 0
+				have dragon fly in, middle of y, to x about 1/3 of width (can float at target if it gets there before state change)
+				Stars/Planets start at 4x speed, and slowly go to 1x speed, once there state = 1
+			if state == 2
+				dragon fly off right side of screen
+				Stars/Planets slowly go to 4x speed
+					when speed of stars/planets are at 4x speed
+						if dragon alive, selectedLevel++
+						Call save function
+						start = 3
+						clear out arrays
+			if state == 1
+				Process input (which moves dragon)
+				move knights (knights come in 1 every second, 5,7,11 max)
+				move projectiles
+				check collision (projectiles with dragon or knights, depend on projectile)
+				update particles position
+		if redraw set
+			clear to black
+			if state == 3
+				draw
+					Winner/Game Over
+					menu
+			else if state != 3
+				draw 
+					far
+						stars
+						planets
+					middle
+						stars
+						planets
+					near
+						stars
+						planets
+					Partitcles
+					Knights
+					Dragon
+					Projectiles
+					Hud
+					Faded Rectangle
+					Winner/Game Over
+			flip_screen
+	Clean up code

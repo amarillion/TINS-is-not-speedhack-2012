@@ -1,0 +1,5 @@
+Lamppost.png
+50 189
+1
+idle 1
+0 0 0 0

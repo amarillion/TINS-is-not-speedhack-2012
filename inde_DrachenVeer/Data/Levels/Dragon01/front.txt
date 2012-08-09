@@ -1,0 +1,7 @@
+6
+OBT Lamp0_0 -80 350 0 Lamp0.obt
+OBT Lamp0_0 220 350 0 Lamp0.obt
+OBT Lamp0_0 520 350 0 Lamp0.obt
+OBT Lamp0_0 820 350 0 Lamp0.obt
+OBT Lamp0_0 1120 350 0 Lamp0.obt
+OBT Lamp0_0 1420 350 0 Lamp0.obt

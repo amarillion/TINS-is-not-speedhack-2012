@@ -1,0 +1,20 @@
+19
+Hero Snake
+TRex DragonNoWings
+Dragon DragonWinged
+Enemy Caveman
+Ground Invisible
+uibox WidgetZSkinBox
+uibup WidgetZSkinBUp
+uibdown WidgetZSkinBDown
+uiscroll WidgetZSkinScroll
+uislider WidgetZSkinSlider
+uiedit WidgetZSkinEdit
+Bush0 Bush0
+Bush1 Bush1
+Bush2 Bush2
+Rock0 Rock0
+Lamp0 Lamp0
+Cloud0 Cloud0
+Cloud1 Cloud1
+Cloud2 Cloud2

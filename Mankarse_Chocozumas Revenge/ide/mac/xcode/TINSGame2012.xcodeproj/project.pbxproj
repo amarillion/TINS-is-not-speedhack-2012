@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2072A3D315CF5592002FF45C /* DragonRoar.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 2072A3C715CF5592002FF45C /* DragonRoar.ogg */; };
+		2072A3D415CF5592002FF45C /* FireLoop.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 2072A3C815CF5592002FF45C /* FireLoop.ogg */; };
+		2072A3D515CF5592002FF45C /* Footstep1.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 2072A3C915CF5592002FF45C /* Footstep1.ogg */; };
+		2072A3D615CF5592002FF45C /* Footstep2.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 2072A3CA15CF5592002FF45C /* Footstep2.ogg */; };
+		2072A3D715CF5592002FF45C /* Footstep3.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 2072A3CB15CF5592002FF45C /* Footstep3.ogg */; };
+		2072A3D915CF5592002FF45C /* GameMus.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 2072A3CD15CF5592002FF45C /* GameMus.ogg */; };
+		2072A3DA15CF5592002FF45C /* Lazor.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 2072A3CE15CF5592002FF45C /* Lazor.ogg */; };
+		2072A3DB15CF5592002FF45C /* Screams1.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 2072A3CF15CF5592002FF45C /* Screams1.ogg */; };
+		2072A3DC15CF5592002FF45C /* Screams2.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 2072A3D015CF5592002FF45C /* Screams2.ogg */; };
+		2072A3DD15CF5592002FF45C /* Screams3.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 2072A3D115CF5592002FF45C /* Screams3.ogg */; };
+		2072A43615CFD4B6002FF45C /* Cave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2072A41315CFD4B6002FF45C /* Cave.cpp */; };
+		2072A43715CFD4B6002FF45C /* Dragon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2072A41515CFD4B6002FF45C /* Dragon.cpp */; };
+		2072A43815CFD4B6002FF45C /* Game.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2072A41A15CFD4B6002FF45C /* Game.cpp */; };
+		2072A43B15CFD4B6002FF45C /* GameSave.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2072A42015CFD4B6002FF45C /* GameSave.cpp */; };
+		2072A43C15CFD4B6002FF45C /* GroundHeightmap.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2072A42315CFD4B6002FF45C /* GroundHeightmap.cpp */; };
+		2072A43D15CFD4B6002FF45C /* MainMenu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2072A42715CFD4B6002FF45C /* MainMenu.cpp */; };
+		2072A43E15CFD4B6002FF45C /* Primes.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 2072A42A15CFD4B6002FF45C /* Primes.cpp */; };
+		207F585B15CCD7E90037B9D9 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 207F585915CCD7E90037B9D9 /* main.cpp */; };
+		20BCD66B15CE5EEE001BE033 /* MenuMus.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 20BCD65515CE5EEE001BE033 /* MenuMus.ogg */; };
+		20D4688515CFAA1200D76210 /* Footstep0.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 20D4687E15CFAA1200D76210 /* Footstep0.ogg */; };
+		20D4688615CFAA1200D76210 /* Screams0.ogg in Resources */ = {isa = PBXBuildFile; fileRef = 20D4687F15CFAA1200D76210 /* Screams0.ogg */; };
+		20D4688D15CFCCD000D76210 /* SpriteSheet.png in Resources */ = {isa = PBXBuildFile; fileRef = 20D4688B15CFCCD000D76210 /* SpriteSheet.png */; };
+		20D4688E15CFCCD000D76210 /* SpriteSheet.txt in Resources */ = {isa = PBXBuildFile; fileRef = 20D4688C15CFCCD000D76210 /* SpriteSheet.txt */; };
+		20D4689715CFD8AA00D76210 /* liballegro_acodec.5.0.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 207F585C15CCDB410037B9D9 /* liballegro_acodec.5.0.7.dylib */; };
+		20D4689815CFD8B400D76210 /* liballegro_audio.5.0.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 207F585D15CCDB410037B9D9 /* liballegro_audio.5.0.7.dylib */; };
+		20D4689915CFD8C600D76210 /* liballegro_font.5.0.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 207F586015CCDB410037B9D9 /* liballegro_font.5.0.7.dylib */; };
+		20D4689A15CFD8CE00D76210 /* liballegro_image.5.0.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 207F586115CCDB410037B9D9 /* liballegro_image.5.0.7.dylib */; };
+		20D4689B15CFD8D700D76210 /* liballegro_main.5.0.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 207F586215CCDB410037B9D9 /* liballegro_main.5.0.7.dylib */; };
+		20D4689C15CFD8E200D76210 /* liballegro_primitives.5.0.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 207F586415CCDB410037B9D9 /* liballegro_primitives.5.0.7.dylib */; };
+		20D4689D15CFD8E900D76210 /* liballegro.5.0.7.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 207F586615CCDB410037B9D9 /* liballegro.5.0.7.dylib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		204292E515CF209200665276 /* clone_ptr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = clone_ptr.h; sourceTree = "<group>"; };
+		2072A3C715CF5592002FF45C /* DragonRoar.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = DragonRoar.ogg; sourceTree = "<group>"; };
+		2072A3C815CF5592002FF45C /* FireLoop.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = FireLoop.ogg; sourceTree = "<group>"; };
+		2072A3C915CF5592002FF45C /* Footstep1.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = Footstep1.ogg; sourceTree = "<group>"; };
+		2072A3CA15CF5592002FF45C /* Footstep2.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = Footstep2.ogg; sourceTree = "<group>"; };
+		2072A3CB15CF5592002FF45C /* Footstep3.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = Footstep3.ogg; sourceTree = "<group>"; };
+		2072A3CD15CF5592002FF45C /* GameMus.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = GameMus.ogg; sourceTree = "<group>"; };
+		2072A3CE15CF5592002FF45C /* Lazor.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = Lazor.ogg; sourceTree = "<group>"; };
+		2072A3CF15CF5592002FF45C /* Screams1.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = Screams1.ogg; sourceTree = "<group>"; };
+		2072A3D015CF5592002FF45C /* Screams2.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = Screams2.ogg; sourceTree = "<group>"; };
+		2072A3D115CF5592002FF45C /* Screams3.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = Screams3.ogg; sourceTree = "<group>"; };
+		2072A41115CFD4B6002FF45C /* AllPrimes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AllPrimes.h; sourceTree = "<group>"; };
+		2072A41215CFD4B6002FF45C /* Bullet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bullet.h; sourceTree = "<group>"; };
+		2072A41315CFD4B6002FF45C /* Cave.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Cave.cpp; sourceTree = "<group>"; };
+		2072A41415CFD4B6002FF45C /* Cave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cave.h; sourceTree = "<group>"; };
+		2072A41515CFD4B6002FF45C /* Dragon.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Dragon.cpp; sourceTree = "<group>"; };
+		2072A41615CFD4B6002FF45C /* Dragon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dragon.h; sourceTree = "<group>"; };
+		2072A41715CFD4B6002FF45C /* DragonAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragonAnimation.h; sourceTree = "<group>"; };
+		2072A41815CFD4B6002FF45C /* DragonStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragonStats.h; sourceTree = "<group>"; };
+		2072A41915CFD4B6002FF45C /* Enemy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enemy.h; sourceTree = "<group>"; };
+		2072A41A15CFD4B6002FF45C /* Game.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Game.cpp; sourceTree = "<group>"; };
+		2072A41B15CFD4B6002FF45C /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		2072A42015CFD4B6002FF45C /* GameSave.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GameSave.cpp; sourceTree = "<group>"; };
+		2072A42115CFD4B6002FF45C /* GameSave.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSave.h; sourceTree = "<group>"; };
+		2072A42215CFD4B6002FF45C /* Geometry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Geometry.h; sourceTree = "<group>"; };
+		2072A42315CFD4B6002FF45C /* GroundHeightmap.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = GroundHeightmap.cpp; sourceTree = "<group>"; };
+		2072A42415CFD4B6002FF45C /* GroundHeightmap.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroundHeightmap.h; sourceTree = "<group>"; };
+		2072A42515CFD4B6002FF45C /* Hut.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Hut.h; sourceTree = "<group>"; };
+		2072A42615CFD4B6002FF45C /* InputState.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InputState.h; sourceTree = "<group>"; };
+		2072A42715CFD4B6002FF45C /* MainMenu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainMenu.cpp; sourceTree = "<group>"; };
+		2072A42815CFD4B6002FF45C /* MainMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenu.h; sourceTree = "<group>"; };
+		2072A42915CFD4B6002FF45C /* Particle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Particle.h; sourceTree = "<group>"; };
+		2072A42A15CFD4B6002FF45C /* Primes.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Primes.cpp; sourceTree = "<group>"; };
+		2072A42B15CFD4B6002FF45C /* Primes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Primes.h; sourceTree = "<group>"; };
+		2072A42C15CFD4B6002FF45C /* Rect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Rect.h; sourceTree = "<group>"; };
+		2072A42D15CFD4B6002FF45C /* Renderable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Renderable.h; sourceTree = "<group>"; };
+		2072A42E15CFD4B6002FF45C /* RenderQueueSet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RenderQueueSet.h; sourceTree = "<group>"; };
+		2072A42F15CFD4B6002FF45C /* Scene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Scene.h; sourceTree = "<group>"; };
+		2072A43015CFD4B6002FF45C /* SimpleAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SimpleAnimation.h; sourceTree = "<group>"; };
+		2072A43115CFD4B6002FF45C /* Spawner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Spawner.h; sourceTree = "<group>"; };
+		2072A43215CFD4B6002FF45C /* StaticObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticObject.h; sourceTree = "<group>"; };
+		2072A43515CFD4B6002FF45C /* Villager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Villager.h; sourceTree = "<group>"; };
+		2072A44015CFD998002FF45C /* DragonFlame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DragonFlame.h; sourceTree = "<group>"; };
+		207F585715CCD7C60037B9D9 /* TINSGame2012-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "TINSGame2012-Info.plist"; sourceTree = "<group>"; };
+		207F585915CCD7E90037B9D9 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = main.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
+		207F585C15CCDB410037B9D9 /* liballegro_acodec.5.0.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_acodec.5.0.7.dylib; path = ../../../ext/allegro/lib/liballegro_acodec.5.0.7.dylib; sourceTree = "<group>"; };
+		207F585D15CCDB410037B9D9 /* liballegro_audio.5.0.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_audio.5.0.7.dylib; path = ../../../ext/allegro/lib/liballegro_audio.5.0.7.dylib; sourceTree = "<group>"; };
+		207F586015CCDB410037B9D9 /* liballegro_font.5.0.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_font.5.0.7.dylib; path = ../../../ext/allegro/lib/liballegro_font.5.0.7.dylib; sourceTree = "<group>"; };
+		207F586115CCDB410037B9D9 /* liballegro_image.5.0.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_image.5.0.7.dylib; path = ../../../ext/allegro/lib/liballegro_image.5.0.7.dylib; sourceTree = "<group>"; };
+		207F586215CCDB410037B9D9 /* liballegro_main.5.0.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_main.5.0.7.dylib; path = ../../../ext/allegro/lib/liballegro_main.5.0.7.dylib; sourceTree = "<group>"; };
+		207F586415CCDB410037B9D9 /* liballegro_primitives.5.0.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_primitives.5.0.7.dylib; path = ../../../ext/allegro/lib/liballegro_primitives.5.0.7.dylib; sourceTree = "<group>"; };
+		207F586615CCDB410037B9D9 /* liballegro.5.0.7.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro.5.0.7.dylib; path = ../../../ext/allegro/lib/liballegro.5.0.7.dylib; sourceTree = "<group>"; };
+		20BCD65515CE5EEE001BE033 /* MenuMus.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = MenuMus.ogg; sourceTree = "<group>"; };
+		20D4681D15CEA07500D76210 /* Bitmap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bitmap.h; sourceTree = "<group>"; };
+		20D4682B15CF5E6D00D76210 /* Timer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Timer.h; sourceTree = "<group>"; };
+		20D4682C15CF5E7B00D76210 /* EventQueue.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EventQueue.h; sourceTree = "<group>"; };
+		20D4683815CF98BA00D76210 /* Filesystem.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Filesystem.h; sourceTree = "<group>"; };
+		20D4687E15CFAA1200D76210 /* Footstep0.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = Footstep0.ogg; sourceTree = "<group>"; };
+		20D4687F15CFAA1200D76210 /* Screams0.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; path = Screams0.ogg; sourceTree = "<group>"; };
+		20D4688B15CFCCD000D76210 /* SpriteSheet.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SpriteSheet.png; sourceTree = "<group>"; };
+		20D4688C15CFCCD000D76210 /* SpriteSheet.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SpriteSheet.txt; sourceTree = "<group>"; };
+		20D4688F15CFCFEF00D76210 /* StrictMap.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = StrictMap.h; sourceTree = "<group>"; };
+		20E735E715CD06B800A4F90B /* Globals.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; lineEnding = 0; path = Globals.h; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.objcpp; };
+		20FE1FB515CCD6250055B92B /* TINSGame2012.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; name = TINSGame2012.app; path = "Chocozumas Revenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		20FE1FB215CCD6250055B92B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20D4689715CFD8AA00D76210 /* liballegro_acodec.5.0.7.dylib in Frameworks */,
+				20D4689815CFD8B400D76210 /* liballegro_audio.5.0.7.dylib in Frameworks */,
+				20D4689915CFD8C600D76210 /* liballegro_font.5.0.7.dylib in Frameworks */,
+				20D4689A15CFD8CE00D76210 /* liballegro_image.5.0.7.dylib in Frameworks */,
+				20D4689B15CFD8D700D76210 /* liballegro_main.5.0.7.dylib in Frameworks */,
+				20D4689C15CFD8E200D76210 /* liballegro_primitives.5.0.7.dylib in Frameworks */,
+				20D4689D15CFD8E900D76210 /* liballegro.5.0.7.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		205E8C2B15CCD71900CD2AA5 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				2072A41115CFD4B6002FF45C /* AllPrimes.h */,
+				2072A41215CFD4B6002FF45C /* Bullet.h */,
+				2072A41315CFD4B6002FF45C /* Cave.cpp */,
+				2072A41415CFD4B6002FF45C /* Cave.h */,
+				2072A41515CFD4B6002FF45C /* Dragon.cpp */,
+				2072A41615CFD4B6002FF45C /* Dragon.h */,
+				2072A41715CFD4B6002FF45C /* DragonAnimation.h */,
+				2072A44015CFD998002FF45C /* DragonFlame.h */,
+				2072A41815CFD4B6002FF45C /* DragonStats.h */,
+				2072A41915CFD4B6002FF45C /* Enemy.h */,
+				2072A41A15CFD4B6002FF45C /* Game.cpp */,
+				2072A41B15CFD4B6002FF45C /* Game.h */,
+				2072A42015CFD4B6002FF45C /* GameSave.cpp */,
+				2072A42115CFD4B6002FF45C /* GameSave.h */,
+				2072A42215CFD4B6002FF45C /* Geometry.h */,
+				2072A42315CFD4B6002FF45C /* GroundHeightmap.cpp */,
+				2072A42415CFD4B6002FF45C /* GroundHeightmap.h */,
+				2072A42515CFD4B6002FF45C /* Hut.h */,
+				2072A42615CFD4B6002FF45C /* InputState.h */,
+				2072A42715CFD4B6002FF45C /* MainMenu.cpp */,
+				2072A42815CFD4B6002FF45C /* MainMenu.h */,
+				2072A42915CFD4B6002FF45C /* Particle.h */,
+				2072A42A15CFD4B6002FF45C /* Primes.cpp */,
+				2072A42B15CFD4B6002FF45C /* Primes.h */,
+				2072A42C15CFD4B6002FF45C /* Rect.h */,
+				2072A42D15CFD4B6002FF45C /* Renderable.h */,
+				2072A42E15CFD4B6002FF45C /* RenderQueueSet.h */,
+				2072A42F15CFD4B6002FF45C /* Scene.h */,
+				2072A43015CFD4B6002FF45C /* SimpleAnimation.h */,
+				2072A43115CFD4B6002FF45C /* Spawner.h */,
+				2072A43215CFD4B6002FF45C /* StaticObject.h */,
+				2072A43515CFD4B6002FF45C /* Villager.h */,
+				20E735E715CD06B800A4F90B /* Globals.h */,
+				20D4688F15CFCFEF00D76210 /* StrictMap.h */,
+				20D4681D15CEA07500D76210 /* Bitmap.h */,
+				20D4682C15CF5E7B00D76210 /* EventQueue.h */,
+				20D4682B15CF5E6D00D76210 /* Timer.h */,
+				20D4683815CF98BA00D76210 /* Filesystem.h */,
+				207F585915CCD7E90037B9D9 /* main.cpp */,
+				204292E515CF209200665276 /* clone_ptr.h */,
+			);
+			name = src;
+			path = ../../../src;
+			sourceTree = SOURCE_ROOT;
+		};
+		205E8C2C15CCD77C00CD2AA5 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				20D4688B15CFCCD000D76210 /* SpriteSheet.png */,
+				20D4688C15CFCCD000D76210 /* SpriteSheet.txt */,
+				2072A3C715CF5592002FF45C /* DragonRoar.ogg */,
+				2072A3C815CF5592002FF45C /* FireLoop.ogg */,
+				20D4687E15CFAA1200D76210 /* Footstep0.ogg */,
+				2072A3C915CF5592002FF45C /* Footstep1.ogg */,
+				2072A3CA15CF5592002FF45C /* Footstep2.ogg */,
+				2072A3CB15CF5592002FF45C /* Footstep3.ogg */,
+				2072A3CD15CF5592002FF45C /* GameMus.ogg */,
+				2072A3CE15CF5592002FF45C /* Lazor.ogg */,
+				20BCD65515CE5EEE001BE033 /* MenuMus.ogg */,
+				20D4687F15CFAA1200D76210 /* Screams0.ogg */,
+				2072A3CF15CF5592002FF45C /* Screams1.ogg */,
+				2072A3D015CF5592002FF45C /* Screams2.ogg */,
+				2072A3D115CF5592002FF45C /* Screams3.ogg */,
+				207F585715CCD7C60037B9D9 /* TINSGame2012-Info.plist */,
+			);
+			name = res;
+			path = ../../../res;
+			sourceTree = SOURCE_ROOT;
+		};
+		20FE1FA815CCD5F90055B92B = {
+			isa = PBXGroup;
+			children = (
+				205E8C2C15CCD77C00CD2AA5 /* res */,
+				205E8C2B15CCD71900CD2AA5 /* src */,
+				20FE1FB815CCD6250055B92B /* Frameworks */,
+				20FE1FB615CCD6250055B92B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		20FE1FB615CCD6250055B92B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				20FE1FB515CCD6250055B92B /* TINSGame2012.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20FE1FB815CCD6250055B92B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				207F585C15CCDB410037B9D9 /* liballegro_acodec.5.0.7.dylib */,
+				207F585D15CCDB410037B9D9 /* liballegro_audio.5.0.7.dylib */,
+				207F586015CCDB410037B9D9 /* liballegro_font.5.0.7.dylib */,
+				207F586115CCDB410037B9D9 /* liballegro_image.5.0.7.dylib */,
+				207F586215CCDB410037B9D9 /* liballegro_main.5.0.7.dylib */,
+				207F586415CCDB410037B9D9 /* liballegro_primitives.5.0.7.dylib */,
+				207F586615CCDB410037B9D9 /* liballegro.5.0.7.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		20FE1FB415CCD6250055B92B /* Chocozumas Revenge */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 20FE1FD115CCD6250055B92B /* Build configuration list for PBXNativeTarget "Chocozumas Revenge" */;
+			buildPhases = (
+				20FE1FB115CCD6250055B92B /* Sources */,
+				20FE1FB215CCD6250055B92B /* Frameworks */,
+				20FE1FB315CCD6250055B92B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Chocozumas Revenge";
+			productName = TINSGame2012;
+			productReference = 20FE1FB515CCD6250055B92B /* TINSGame2012.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		20FE1FAA15CCD5F90055B92B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+			};
+			buildConfigurationList = 20FE1FAD15CCD5F90055B92B /* Build configuration list for PBXProject "TINSGame2012" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 20FE1FA815CCD5F90055B92B;
+			productRefGroup = 20FE1FB615CCD6250055B92B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				20FE1FB415CCD6250055B92B /* Chocozumas Revenge */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		20FE1FB315CCD6250055B92B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				20BCD66B15CE5EEE001BE033 /* MenuMus.ogg in Resources */,
+				2072A3D315CF5592002FF45C /* DragonRoar.ogg in Resources */,
+				2072A3D415CF5592002FF45C /* FireLoop.ogg in Resources */,
+				2072A3D515CF5592002FF45C /* Footstep1.ogg in Resources */,
+				2072A3D615CF5592002FF45C /* Footstep2.ogg in Resources */,
+				2072A3D715CF5592002FF45C /* Footstep3.ogg in Resources */,
+				2072A3D915CF5592002FF45C /* GameMus.ogg in Resources */,
+				2072A3DA15CF5592002FF45C /* Lazor.ogg in Resources */,
+				2072A3DB15CF5592002FF45C /* Screams1.ogg in Resources */,
+				2072A3DC15CF5592002FF45C /* Screams2.ogg in Resources */,
+				2072A3DD15CF5592002FF45C /* Screams3.ogg in Resources */,
+				20D4688515CFAA1200D76210 /* Footstep0.ogg in Resources */,
+				20D4688615CFAA1200D76210 /* Screams0.ogg in Resources */,
+				20D4688D15CFCCD000D76210 /* SpriteSheet.png in Resources */,
+				20D4688E15CFCCD000D76210 /* SpriteSheet.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		20FE1FB115CCD6250055B92B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				207F585B15CCD7E90037B9D9 /* main.cpp in Sources */,
+				2072A43615CFD4B6002FF45C /* Cave.cpp in Sources */,
+				2072A43715CFD4B6002FF45C /* Dragon.cpp in Sources */,
+				2072A43815CFD4B6002FF45C /* Game.cpp in Sources */,
+				2072A43B15CFD4B6002FF45C /* GameSave.cpp in Sources */,
+				2072A43C15CFD4B6002FF45C /* GroundHeightmap.cpp in Sources */,
+				2072A43D15CFD4B6002FF45C /* MainMenu.cpp in Sources */,
+				2072A43E15CFD4B6002FF45C /* Primes.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		20FE1FAF15CCD5F90055B92B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		20FE1FB015CCD5F90055B92B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		20FE1FD215CCD6250055B92B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++98";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = "";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../../../ext/allegro/include;
+				INFOPLIST_FILE = "$(SRCROOT)/../../../res/TINSGame2012-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					../../../ext/allegro/lib,
+					"\"$(SRCROOT)/../../../ext/allegro/lib\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		20FE1FD315CCD6250055B92B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "c++98";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COMBINE_HIDPI_IMAGES = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PREFIX_HEADER = "";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../../../ext/allegro/include;
+				INFOPLIST_FILE = "$(SRCROOT)/../../../res/TINSGame2012-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					../../../ext/allegro/lib,
+					"\"$(SRCROOT)/../../../ext/allegro/lib\"",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		20FE1FAD15CCD5F90055B92B /* Build configuration list for PBXProject "TINSGame2012" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20FE1FAF15CCD5F90055B92B /* Debug */,
+				20FE1FB015CCD5F90055B92B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		20FE1FD115CCD6250055B92B /* Build configuration list for PBXNativeTarget "Chocozumas Revenge" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				20FE1FD215CCD6250055B92B /* Debug */,
+				20FE1FD315CCD6250055B92B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 20FE1FAA15CCD5F90055B92B /* Project object */;
+}

@@ -1,0 +1,11 @@
+10
+parallax parallaxbg.png 255 0
+attr attr.txt
+sprites sprites.txt
+objects cloud0.txt
+objects cloud1.txt
+objects cloud2.txt
+objects foliage.txt
+objects playlayer.txt
+script entities.lua
+objects front.txt

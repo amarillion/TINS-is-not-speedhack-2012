@@ -1,0 +1,42 @@
+Game design
+-----------
+
+Game consists of multiple tile map layers. Each layer has a size w*h where w and h are prime numbers.
+Each layer repeats seamlessly. As you move around, the layers scroll one tile each.
+Parallax comes from the fact that the tiles are different sizes in different layers.
+
+The game will come from the idea that the layers are not distinct but can interact in some way using their screen alignment.
+So in order to define an interesting game, we will need to think about:
+- tile types
+- interactions between layers.
+
+
+Tile types (with interaction notes inline)
+------------------------------------------
+
+Dragon - this is you.
+	- You can move left/right/up/down
+	- You are always in the middle of the screen - it scrolls as you move
+	- You are simultaneously in all layers - you can only go where all layers are unobstructed. (I might change this if level design doesn't go well)
+
+Diamonds - basic collectibles - you need all of these to complete a level
+
+Brick walls - basic obstructions
+
+Electrical tracks
+	- various connection directions
+	- terminals can be placed on tracks
+	The terminals have to be roughly aligned for a connection to be made.
+	If we define a terminal as occupying 1/2 the width of a tile,
+	then there will usually be about one tile in the next layer through which a connection can be made.
+	It might be nicer for terminals to be circular though.
+
+Generators
+	- these appear as faded diamonds
+	- once a complete circuit has been made including a real diamond and a faded one, the faded one becomes real
+
+Torches
+	- Since you're a dragon - you can breathe fire on these to light them
+	- Once they're lit, they can:
+		- Burn coal to create diamonds
+		- Burn holes in electrical tracks and stop them working

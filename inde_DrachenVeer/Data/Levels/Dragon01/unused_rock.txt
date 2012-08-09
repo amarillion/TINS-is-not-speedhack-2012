@@ -1,0 +1,9 @@
+8
+OBT Rock0_0 -100 450 0 Rock0.obt
+OBT Rock0_1 100 450 0 Rock0.obt
+OBT Rock0_2 300 450 0 Rock0.obt
+OBT Rock0_3 500 450 0 Rock0.obt
+OBT Rock0_4 700 450 0 Rock0.obt
+OBT Rock0_5 900 450 0 Rock0.obt
+OBT Rock0_6 1100 450 0 Rock0.obt
+OBT Rock0_7 1300 450 0 Rock0.obt

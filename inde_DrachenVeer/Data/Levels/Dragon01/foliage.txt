@@ -1,0 +1,22 @@
+21
+OBT Bush0_0  0 320 0 Bush0.obt
+OBT Bush2_0 60 325 0 Bush2.obt
+OBT Bush1_0 120 345 0 Bush1.obt
+OBT Bush0_1 200 320 0 Bush0.obt
+OBT Bush2_1 260 325 0 Bush2.obt
+OBT Bush1_1 320 345 0 Bush1.obt
+OBT Bush0_2 400 320 0 Bush0.obt
+OBT Bush2_2 460 325 0 Bush2.obt
+OBT Bush1_2 520 345 0 Bush1.obt
+OBT Bush0_3 600 320 0 Bush0.obt
+OBT Bush2_3 660 325 0 Bush2.obt
+OBT Bush1_3 720 345 0 Bush1.obt
+OBT Bush0_4 800 320 0 Bush0.obt
+OBT Bush2_4 860 325 0 Bush2.obt
+OBT Bush1_4 920 345 0 Bush1.obt
+OBT Bush0_5 1000 320 0 Bush0.obt
+OBT Bush2_5 1060 325 0 Bush2.obt
+OBT Bush1_5 1120 345 0 Bush1.obt
+OBT Bush0_6 1200 320 0 Bush0.obt
+OBT Bush2_6 1260 325 0 Bush2.obt
+OBT Bush1_6 1320 345 0 Bush1.obt

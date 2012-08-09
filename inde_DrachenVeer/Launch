@@ -1,0 +1,8 @@
+#!/bin/sh
+cd `dirname $0`
+rm -f gamelog.txt
+rm -f gmon.out
+export LD_LIBRARY_PATH=Bin:Deps/lib:$LD_LIBRARY_PATH
+export DYLD_LIBRARY_PATH=Bin:Deps/lib:$DYLD_LIBRARY_PATH
+PATH=$PATH:Bin:Deps/bin [ -x Bin/main ] && exec Bin/main $*
+PATH=$PATH:Bin:Deps/bin [ -x Bin/Main ] && exec Bin/Main $*

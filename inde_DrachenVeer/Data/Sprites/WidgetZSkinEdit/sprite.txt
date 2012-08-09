@@ -1,0 +1,5 @@
+editbox.png
+25 25
+1
+idle 1
+0 0 0 0
