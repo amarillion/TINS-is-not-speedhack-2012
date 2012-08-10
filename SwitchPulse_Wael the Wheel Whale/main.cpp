@@ -99,6 +99,7 @@ int main(int argc, char **argv)
     al_register_event_source(event_queue, al_get_display_event_source(display));
     al_register_event_source(event_queue, al_get_keyboard_event_source());
     bool quit = false;
+    al_set_target_bitmap(al_get_backbuffer(display));
 
     float initX = 200;
     float initY = 100;
@@ -205,7 +206,7 @@ int main(int argc, char **argv)
                     {
                         if(enemies.at(i).collide(bullets.at(j)))
                         {
-                            enemies.erase (enemies.begin()+i--);
+                            enemies.erase (enemies.begin()+i);
                         }
                     }
                 }
