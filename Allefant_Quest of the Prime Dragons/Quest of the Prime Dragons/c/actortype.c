@@ -53,6 +53,9 @@ ActorType * actor_type_new(int w, int h, int kind) {
     self->level = levels[kind];
     self->initial_hp = 10 * pow(2, (self->level - 1) / 5.0);
     self->initial_damage = pow(2, (self->level - 1) / 5.0);
+    if (self->initial_damage > 7) {
+        self->initial_damage = 7;
+    }
     self->id = kind;
     actor_type[kind] = self;
     land_clear(1, 1.0 * kind / AT_COUNT, 1, 1);
