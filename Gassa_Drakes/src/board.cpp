@@ -406,7 +406,10 @@ int Board::get_level (void)
 
 void Board::register_mouse_click (float cur_x, float cur_y)
 {
-    assert (!mouse_clicked);
+    if (mouse_clicked)
+    {
+        return;
+    }
 
     if ((cur_y < draw_y) || (draw_x + HEIGHT * Piece::HEIGHT < cur_y) ||
         (cur_x < draw_x) || (draw_x + WIDTH  * Piece::WIDTH  < cur_x))
