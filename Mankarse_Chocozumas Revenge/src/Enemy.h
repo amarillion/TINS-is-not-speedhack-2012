@@ -1,7 +1,7 @@
 #ifndef TINSGame2012_Enemy_h
 #define TINSGame2012_Enemy_h
 #include <vector>
-#include "GroundHeightMap.h"
+#include "GroundHeightmap.h"
 #include "Renderable.h"
 #include "Dragon.h"
 #include "Bullet.h"
